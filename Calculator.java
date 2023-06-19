@@ -2,10 +2,8 @@ import java.util.Scanner;
 public class Calculator {
 	public static void main(String[] args) {
 		Scanner inputField = new Scanner(System.in);
-		System.out.println("What is your name");
-
-		String firstName = inputField.nextLine();
-		        System.out.println(firstName + " please enter any number");
+	
+		 System.out.println("Please enter any number");
 
 		int firstNumber = inputField.nextInt();
 				System.out.println("Please enter another number ");	
