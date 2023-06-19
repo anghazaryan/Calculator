@@ -3,43 +3,42 @@ public class Calculator {
 	public static void main(String[] args) {
 		Scanner inputField = new Scanner(System.in);
 	
-		 System.out.println("Please enter any number");
+		System.out.println("Please enter any number");
+		float firstNumber = inputField.nextFloat() ;
 
-		int firstNumber = inputField.nextInt();
-				System.out.println("Please enter another number ");	
-
-		int secondNumber = inputField.nextInt();
+		System.out.println("Please enter another number ");	
+		float secondNumber = inputField.nextFloat() ;
 
 		System.out.println("Choose an operator: +, -, *, or /");
-		 char operator = inputField.next().charAt(0);
+		String operator = inputField.next();
 
-				int result = 0;
+		float result = 0;
 
-	switch (operator) {
+		switch (operator) {
 
-	case '+': 
-		result = firstNumber + secondNumber;
-		System.out.println(firstNumber + " + " + secondNumber + " = " + result);
-		break;
+		case "+": 
+			result = firstNumber + secondNumber;
+			System.out.println(firstNumber + " + " + secondNumber + " = " + result);
+			break;
 
-	case '-':
-		result = firstNumber - secondNumber;
-		System.out.println(firstNumber + " - " + secondNumber + " = " + result);
-		break;
+		case "-":
+			result = firstNumber - secondNumber;
+			System.out.println(firstNumber + " - " + secondNumber + " = " + result);
+			break;
 
-	case '*':
-		result = firstNumber * secondNumber;
-		System.out.println(firstNumber + " * " + secondNumber + " = " + result);
-		break;
+		case "*":
+			result = firstNumber * secondNumber;
+			System.out.println(firstNumber + " * " + secondNumber + " = " + result);
+			break;
 
-	case '/':
-		result = firstNumber / secondNumber;
-		System.out.println(firstNumber + " / " + secondNumber + " = "+ result);
-		break;
+		case "/":
+			result = firstNumber / secondNumber;
+			System.out.println(firstNumber + " / " + secondNumber + " = "+ result);
+			break;
 
-	default:
-		System.out.println("Wrong value is inserted!");
-		break;
-	  }
+		default:
+			System.out.println("Wrong value is inserted!");
+			break;
+		  }
     }
   }
